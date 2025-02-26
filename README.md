@@ -1,8 +1,10 @@
-# React + Vite
+# Landing Page - Cursos para Nails Designers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Sobre o Projeto
+Landing Page para venda de cursos para Nails Designers, com informações sobre a cliente, cursos disponíveis e um carrossel de depoimentos.
 
-Currently, two official plugins are available:
+![Capa do Site](./lpnicke.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Tecnologias
+- HTML5, CSS3, JavaScript
+- Swiper.js (Carrossel de depoimentos)
