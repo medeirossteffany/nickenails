@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121417;
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url(../imgs/fundo.png) no-repeat center center/cover;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding: 0 20px;
+    position: relative;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.divider {
+    position: absolute;
+    bottom: 0; /* Cola o divisor na parte inferior */
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Garante que o divisor fique sobre a hero */
+}
+
+.divider img {
+    width: 100%;
+    display: block;
+}
+
+.divider.inverted {
+    position: relative; /* Alterado de relative para absolute */
+    bottom: 60.5px; /* Ajuste fino para encaixar perfeitamente */
+    left: 0;
+    width: 102.4%;
+    transform: scaleY(-1); /* Mantém a inversão */
+    z-index: 2; /* Garante que fique sobre o fundo */
+}
+
+
+
+.hero-content {
+    
+    padding-left: 4%;
+    max-width: 780px;
+}
+
+.hero h4 {
+    color: #e6c08b;
+    font-weight: 500;
+    margin-bottom: 1%;
+    font-size: 22px;
+}
+
+.hero h1 {
+    margin-top: 1%;
+    font-size: 57px;
+    margin-bottom: 4%;
+    font-weight: 700;
+}
+
+.hero p {
+    color: #CCCDCD;
+    font-size: 1rem;
+    font-size: 26px;
+    margin-bottom: 4%;
+    max-width: 650px;
+}
+
+.hero-content p .destaque {
+    font-weight: 500; /* ou o valor que preferir */
+    color: #ffffff;   /* cor mais clara para destacar */
+  }
+
+.btn1{
+    align-items: center;
+    background: linear-gradient(90deg, #D3AF74, #8B6A35);
+    color: #ffff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+.btn{
+    align-items: center;
+    background: linear-gradient(90deg, #D3AF74, #8B6A35);
+    color: #ffff;
+    border: none;
+    padding: 15px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover, .btn1:hover { 
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(211, 175, 116, 0.8);
+}
+
+
+/* Benefícios */
+.benefits {
+    background: white;
+    text-align: center;
+    padding: 80px 20px;
+    padding-bottom: 4%;
+}
+
+.benefits h2 {
+    margin-top: -65px;
+    color: #121417;
+    font-size: 2.1rem;
+    margin-bottom: 3.5%;
+    font-weight: 700;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit-item {
+    background: white;
+    color: black;
+    width: 350px;
+    height: 280px;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.benefit-item h3 {
+    margin-bottom: 4%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.benefit-item p {
+    font-size: 0.9rem;
+}
+
+.benefits-container .benefit-item:first-child img {
+    width: 65px;
+}
+
+
+
+/* Sobre a Instrutora */
+.about {
+    display: flex; /* Corrigido para flex */
+    align-items: center; /* Alinha verticalmente os elementos */
+    justify-content: space-between; /* Mantém espaço entre os elementos */
+    position: relative;
+    flex-wrap: wrap; /* Para garantir responsividade */
+    background: linear-gradient(to top, #FFF6EA 40%, #ffffff 75%);
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    color: #121417;
+    margin-top: 4%;
+}
+
+.about .text-content {
+    flex: 1; /* Ocupa o espaço disponível */
+    max-width: 50%;
+    padding-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.text-content{
+    margin-top: -2%;
+}
+
+.about p {
+    padding: 2%;
+    margin-left: 15%;
+    
+    text-align: left;
+    font-weight: 600;
+    color: #383838;
+    font-size: 21px;
+}
+
+.about .image-container {
+    flex: 1; /* Ocupa o espaço disponível */
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    align-items: center; /* Mantém a imagem centralizada verticalmente */
+}
+
+.about .image-container img {
+    width: 100%; 
+    max-width: 570px; 
+    max-height: 600px; 
+}
+
+
+
+
+.divisao2 {
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;    
+    padding: 20px;           
+  }
+  
+  .conteudo {
+    text-align:justify;  
+    font-size: 17px;    
+  }
+
+  .conteudo p{
+    font-weight: 200;
+}
+  
+  .warning {
+    text-align: justify;
+    font-weight: 800;
+    color: white;
+  }
+  
+/* Depoimentos */
+.testimonials {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.testimonials h2 {
+    margin-top: 0.6%;
+    color: #121417;
+    font-size: 2.2rem;
+    margin-bottom: 4%;
+    font-weight: 700;
+}
+
+.testimonials h2 span {
+    font-weight: 900;
+}
+
+/* Container do carrossel */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Slider */
+.testimonial-slider {
+    width: 100%;
+}
+
+/* Imagens dentro do carrossel */
+.testimonial-img {
+    width: 100%;
+    max-height: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ffffff; 
+}
+
+
+
+
+
+/* Planos */
+.plans {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 15%;
+}
+
+.plans h2 {
+    margin-top: -4%;
+    margin-bottom: 11%;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.plan {
+    background: #ffffff13;
+    padding: 40px;
+    width: 360px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: #454545;
+    padding-bottom: 8%;
+    border: 1px solid rgba(255, 255, 255, 0.198);
+}
+
+/* Título do plano */
+.plan h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+/* Centralizar preços */
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+/* Estilo do preço antigo */
+.old-price {
+    font-size: 0.9rem; /* Tamanho menor */
+    font-weight: 500;
+    
+}
+
+.red-price {
+    font-size: 16px;
+    color: #ff0000c4; /* Apenas o valor em vermelho */
+    font-weight: bold;
+}
+
+.gray-text {
+    font-size: 16px;
+    color: #dcdcdc; /* "por" em cinza */
+}
+
+/* Estilo do preço novo */
+.price {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Reduzindo tamanho do "R$" */
+.currency {
+    font-size: 1.2rem;
+    font-weight: 400; /* Mais fino */
+    margin-right: 3px;
+}
+
+/* Lista dos benefícios */
+.plan ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 11%;
+    font-size: 18px;
+}
+
+/* Estilização dos itens da lista */
+.plan ul li {
+    color: #CCC8C8;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Mais espaço entre o ícone e o texto */
+    font-weight: 300;
+    margin: 12px 0; /* Mais espaço entre os <li> */
+}
+
+/* Ícone de check */
+.check-icon {
+    width: 20px; /* Ajuste do tamanho */
+    height: 20px;
+}
+
+
+
+
+
+.container-bg {
+    background: url('../imgs/fundodourado.png') no-repeat center center/cover;
+    min-height: 100vh; /* Garante que cobre toda a tela */
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Evita problemas de sobreposição */
+}
+
+
+/* Estilização para garantir que os planos e garantia fiquem dentro do fundo */
+.garantia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha tudo à esquerda */
+    text-align: left; /* Mantém o alinhamento do texto */
+    justify-content: left;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 910px; /* Define o mesmo limite do texto */
+    font-weight: 300;
+    margin-top: -10%;
+    
+}
+
+.garantia img {
+    width: 120px;
+    margin-bottom: 40px;
+}
+
+.garantia p {
+    max-width: 910px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.garantia h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    border-bottom: 2px solid #8B6A35; /* Adiciona a linha abaixo */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    display: inline-block; /* Para que a linha fique apenas sob o texto */
+}
+
+
+
+
+
+
+/* Modo mobile */
+@media (max-width: 700px) {
+    .hero {
+        height: 92vh;
+        background: url(../imgs/fundo-mobile.png) no-repeat center center/cover;
+    }
+    .hero-content{
+        margin-top: -93%;
+        max-width: 600px;
+    }
+    .hero-content h4{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .btn, .btn1{
+        order: 2;
+        padding: 15px 23px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+ 
+    .hero-content h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .hero-content p{
+        font-size: 16px;
+        font-weight: 300;
+        max-width: 387px;
+        margin-bottom: 4%;
+    }
+      
+    .benefits h2 {
+        margin-top: -30px;
+        font-size: 27px;
+        margin-bottom: 48px;
+    }
+
+    .benefits{
+        padding-bottom: 17%;
+    }
+
+    .about {
+        flex-direction: column; /* Empilha os elementos no mobile */
+        background: url(../imgs/testefundo.png) no-repeat center center/cover;
+        height: 135vh;
+        padding: 25px;
+        text-align: center;
+    }
+    
+    .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(51, 51, 51, 0.449); /* Cor preta com 50% de opacidade */
+        z-index: 1; /* Fica sobre a imagem */
+    }
+
+    .about * {
+        position: relative;
+        z-index: 1; /* Mantém o conteúdo acima do overlay */
+    }
+
+    .about .text-content {
+        max-width: 100%;
+    }
+
+    .about h2 {
+        color: #ffffff;
+        font-size: 29px;
+        margin-bottom: 26px;
+        margin-top: 25px;
+        font-weight: 700;
+    }
+
+    .about p {
+        padding: 1.3%;
+        text-align: left;
+        font-weight: 600;
+        color: #ededed;
+        max-width: 800px;
+        margin: 11px;
+        font-size: 18px;
+    }
+
+    .about .image-container {
+        display: none; /* Remove a imagem no mobile */
+    }
+
+    .divisao2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+      
+    .conteudo {
+        order: 1;
+        margin-bottom: -15px;
+        font-size: 15px;  
+        text-align: center;
+      }
+
+    .conteudo p{
+        margin-top: 5px;
+        max-width: 300px;
+    }
+
+    .warning {
+        font-size: 18px;
+      }
+
+    .testimonials{
+        padding-bottom: 20%;
+    }
+    
+    .testimonials h2 {
+        margin-top: -1%;
+        margin-bottom: 11%;
+        font-size: 29px;
+        font-weight: 700;
+
+    }
+    .divider.inverted {
+        width: 109%;
+    }
+    .plans h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+        margin-top: -60px;
+    }
+
+    .garantia h2{
+        max-width: 250px;
+    }
+
+}
